@@ -13,7 +13,7 @@ namespace telas
     public partial class Form1 : Form
     {
         private System.ComponentModel.IContainer components = null;
-        
+
         public Form1()
         {
             this.components = new System.ComponentModel.Container();
@@ -21,6 +21,5 @@ namespace telas
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Text = "Form1";
         }
-
     }
 }
