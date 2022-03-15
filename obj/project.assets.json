@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lucas.souza3\\Desktop\\CsharpTelas\\telas\\telas.csproj",
+      "projectUniqueName": "C:\\Users\\lucas.souza3\\Documents\\CsharpTelas\\telas\\telas.csproj",
       "projectName": "telas",
-      "projectPath": "C:\\Users\\lucas.souza3\\Desktop\\CsharpTelas\\telas\\telas.csproj",
+      "projectPath": "C:\\Users\\lucas.souza3\\Documents\\CsharpTelas\\telas\\telas.csproj",
       "packagesPath": "C:\\Users\\lucas.souza3\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lucas.souza3\\Desktop\\CsharpTelas\\telas\\obj\\",
+      "outputPath": "C:\\Users\\lucas.souza3\\Documents\\CsharpTelas\\telas\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
