@@ -90,7 +90,7 @@ namespace exemplo_winforms
             result = MessageBox.Show(
                 $"Usuário: {this.txtUser.Text}" +
                 $"\nSenha: {this.txtPass.Text}",
-                "Titulo da Mensagem",
+                "Ola User",
                 MessageBoxButtons.YesNo
             );
 
@@ -117,6 +117,16 @@ namespace exemplo_winforms
         public Form2()
         {
             this.Text = "Menu Principal";
+
+            Button btnDentista;
+            Button btn;
+            Button btn;
+            Button btn;
+            Button btn;
+            Button btn;
+            Button btn;
+            Button btn;
+            
         }
     }
 
