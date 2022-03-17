@@ -114,20 +114,77 @@ namespace exemplo_winforms
 
     public class Form2 : Form
     {
+
+        private System.ComponentModel.IContainer components = null;
+
+        Label lblDentista;
+
+        Button btnDentista;
+        Button btnPaciente;
+        Button btnProcedi;
+        Button btnEspeciali;
+        Button btnSala;
+        Button btnAgendamento;
+        Button btnCancel;
+
         public Form2()
         {
-            this.Text = "Menu Principal";
+            //this.Text = "Dentista";
 
-            Button btnDentista;
-            Button btn;
-            Button btn;
-            Button btn;
-            Button btn;
-            Button btn;
-            Button btn;
-            Button btn;
+            this.lblDentista = new Label();
+            this.lblDentista.Text = "Dentista";
+            this.lblDentista.Location = new Point(120, 40);
+
+            this.btnDentista = new Button();
+            this.btnDentista.Text = "Dentista";
+            this.btnDentista.Location = new Point(40,80);
+            this.btnDentista.Size = new Size(80,30);
+            
+            this.btnPaciente = new Button();
+            this.btnPaciente.Text = "Paciente";
+            this.btnPaciente.Location = new Point(160,80);
+            this.btnPaciente.Size = new Size(80,30);
+
+            this.btnProcedi = new Button();
+            this.btnProcedi.Text = "Procedi";
+            this.btnProcedi.Location = new Point(40,120);
+            this.btnProcedi.Size = new Size(80,30);
+
+            this.btnEspeciali = new Button();
+            this.btnEspeciali.Text = "Especiali";
+            this.btnEspeciali.Location = new Point(160,120);
+            this.btnEspeciali.Size = new Size(80,30);
+
+            this.btnSala = new Button();
+            this.btnSala.Text = "Sala";
+            this.btnSala.Location = new Point(40,160);
+            this.btnSala.Size = new Size(80,30);
+
+            this.btnAgendamento = new Button();
+            this.btnAgendamento.Text = "Agenda";
+            this.btnAgendamento.Location = new Point(160,160);
+            this.btnAgendamento.Size = new Size(80,30);
+
+            this.btnCancel = new Button();
+            this.btnCancel.Text = "Cancelar";
+            this.btnCancel.Location = new Point(100,220);
+            this.btnCancel.Size = new Size(80,30);
+            this.btnCancel.Click += new EventHandler(this.handleCancelClick);
+
+            this.Controls.Add(this.lblDentista);
+
+            this.Controls.Add(this.btnDentista);
+            this.Controls.Add(this.btnPaciente);
+            this.Controls.Add(this.btnProcedi);
+            this.Controls.Add(this.btnEspeciali);
+            this.Controls.Add(this.btnSala);
+            this.Controls.Add(this.btnAgendamento);
+            this.Controls.Add(this.btnCancel);
             
         }
-    }
 
+        private void handleCancelClick(object sender, EventArgs e) {
+            this.Close();
+        }
+    }
 }
