@@ -64,6 +64,7 @@ namespace exemplo_winforms
             this.btnConfirm.Size = new Size(80,30);
             this.btnConfirm.Click += new EventHandler(this.handleConfirmClick);
             
+            
             this.btnCancel = new Button();
             this.btnCancel.Text = "Cancelar";
             this.btnCancel.Location = new Point(100,220);
@@ -84,37 +85,19 @@ namespace exemplo_winforms
             this.StartPosition = FormStartPosition.CenterScreen;
         }
 
+
         private void handleConfirmClick(object sender, EventArgs e) {
-            DialogResult result;
-
-            result = MessageBox.Show(
-                $"Usuário: {this.txtUser.Text}" +
-                $"\nSenha: {this.txtPass.Text}",
-                "Ola User",
-                MessageBoxButtons.YesNo
-            );
-
-            if (result == DialogResult.Yes)
-            {
-                Form2 menu = new Form2();
-                menu.ShowDialog();
-                this.Close();
-            }
-            else
-            {
-                Console.WriteLine("Clicou não");
-            }
+            Form2 form = new Form2();
+            form.Show();
         }
-        
+
         private void handleCancelClick(object sender, EventArgs e) {
             this.Close();
         }
-
     }
 
     public class Form2 : Form
     {
-
         private System.ComponentModel.IContainer components = null;
 
         Label lblDentista;
@@ -183,6 +166,8 @@ namespace exemplo_winforms
             
         }
 
+        private void handleConfirmClick(object sender, EventArgs e) {
+        }
         private void handleCancelClick(object sender, EventArgs e) {
             this.Close();
         }
