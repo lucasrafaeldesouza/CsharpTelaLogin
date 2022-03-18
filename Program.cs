@@ -87,8 +87,16 @@ namespace exemplo_winforms
 
 
         private void handleConfirmClick(object sender, EventArgs e) {
-            Form2 form = new Form2();
-            form.Show();
+
+            if(this.txtUser.Text == "dentista" && this.txtPass.Text == "123")
+            {
+                Form2 form = new Form2();
+                form.Show();
+            }
+           else
+           {
+               
+           }
         }
 
         private void handleCancelClick(object sender, EventArgs e) {
